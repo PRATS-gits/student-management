@@ -14,7 +14,8 @@ RUN npm ci
 COPY . .
 
 # Build the application for production
-RUN npm run build:prod
+# Build with base-href set to / for Coolify
+RUN npm run build:prod -- --base-href=/
 
 # Runtime stage
 FROM nginx:alpine
@@ -27,6 +28,10 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expose port 80
 EXPOSE 80
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
+  CMD curl -f http://localhost/ || exit 1
 
 # When the container starts, nginx will serve the application
 CMD ["nginx", "-g", "daemon off;"]
