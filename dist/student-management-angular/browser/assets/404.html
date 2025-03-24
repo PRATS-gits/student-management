@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Student Management System</title>
+  <script>
+    // Store the URL that was attempted to be accessed
+    sessionStorage.setItem('redirect', window.location.pathname);
+    
+    // Redirect to the index.html page
+    const baseUrl = '/student-management';
+    window.location.replace(baseUrl + '/');
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
