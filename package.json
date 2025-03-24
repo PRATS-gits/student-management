@@ -12,7 +12,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy": "npm run build:github && npx gh-pages -d dist/student-management-angular/browser",
-    "build:github": "ng build --configuration production --base-href=/angular-management/",
+    "build:github": "ng build --configuration production --base-href=/student-management/",
     "analyze": "ng build --stats-json && webpack-bundle-analyzer dist/student-management-angular/stats.json"
   },
   "private": true,
