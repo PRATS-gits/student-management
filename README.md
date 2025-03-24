@@ -23,8 +23,8 @@ This Student Management System is a Web Lab assignment that demonstrates modern 
 ## Installation and Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/PRATS-gits/angular-management.git
-   cd angular-management
+   git clone https://github.com/PRATS-gits/student-management.git
+   cd student-management
    ```
 
 2. Install dependencies:
@@ -47,7 +47,7 @@ This Student Management System is a Web Lab assignment that demonstrates modern 
 
 ## Deployment
 This application is deployed on GitHub Pages. You can access it at:
-https://prats-gits.github.io/angular-management/
+https://prats-gits.github.io/student-management/
 
 ## License
 This project is available for educational purposes.
